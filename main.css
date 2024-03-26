@@ -1,0 +1,113 @@
+.mainimg {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    margin-left: 300px;
+    margin-right: 200px;
+}
+a{
+    color:rgb(37, 43, 134) !important;
+    text-decoration:none;
+}
+a:hover {
+    color:rgb(8, 51, 27) !important;
+}
+#shopname {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    background-color:cadetblue;
+    padding: 5px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+    
+
+}
+#shopweek {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:rgb(142, 187, 166);
+    
+}
+
+
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; /* Встановлює шрифт для всього документа */
+    margin: 0; /* Встановлює зовнішній відступ на 0 */
+    padding: 0; /* Встановлює внутрішній відступ на 0 */
+    font-size: 22px;
+    background: linear-gradient(to right, #ca6e67, #d1cf63); /* Застосовує градієнтний фон */
+}
+
+
+/* Стилі для заголовка*/
+h1, h2 {
+    font-size: 38px; /* Розмір шрифту */
+    color: rgb(16, 16, 22); /* Колір тексту */
+    font-weight: bold; /* Жирний стиль */
+    line-height: 1.5; /* Міжрядковий інтервал */
+    text-align: center; /* Вирівнювання по центру */
+}
+
+
+/* Стилі для абзаців */
+p {
+    margin-bottom: 10px; /* Відступ вниз */
+}
+
+/* Стилі для маркованих списків */
+ul {
+    text-align: center;
+    list-style-type:none; /* Маркери списку */
+    
+}
+
+/* Стилі для нумерованих списків */
+ol {
+    text-align: center;
+    list-style-type: none; /* Нумерація */
+   
+}
+
+/* Стилі для визначень списків */
+dl {
+    text-align: center;
+    margin-bottom: 20px; /* Відступ вниз */
+}
+
+dt {
+    text-align: center;
+    font-weight: bold; /* Жирний текст */
+}
+
+dd {
+    text-align: center;
+    margin-left: 20px; /* Відступ зліва */
+}
+
+/* Стилі для таблиці */
+table {
+    justify-content: center;
+    text-align: center;
+    width: 100%; /* Ширина таблиці */
+    border-collapse: collapse; /* Злиття меж */
+
+}
+
+th, td {
+    background-color: lightblue;
+    border: 3px solid #3f3b3b; /* Рамка */
+    padding: 10px;
+    text-align:center /* Вирівнювання тексту */
+}
+
+th {
+    text-align:center ;
+    background-color: #d5f7f5; /* Колір фону заголовків */
+}

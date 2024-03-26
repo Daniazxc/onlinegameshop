@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Holovach Dania">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <title>Головна</title>
+    <style>
+        a{
+            color:brown;
+            text-decoration:none
+        }
+        a:hover {
+            color:coral
+        }
+    </style>
 </head>
-<body bgcolor="#C0C0C0">
-     <font color="green" face="Arial" size="7" align="center"> <h1>Інтернет магазин "AwesomeDeal"</h1></font> 
-<font face="Arial" size="4" align="center">  <p>Ласкаво просимо до нашого інтернет-магазину комп'ютерних ігор!</p>
+<body >
+     <div id="shopname"><h1>Інтернет магазин "AwesomeDeal"</h1></div>
+ <p>Ласкаво просимо до нашого інтернет-магазину комп'ютерних ігор!</p>
     <p>У нас ви знайдете найкращі ігри для PC, Xbox, PlayStation та інших платформ.</p>
     <p>Завідуйте до нас щодня для оновлених пропозицій та акцій!</p>
-    <p><a href="about_us.html" style="color: blue;">Дізнатися більше про нас</a></p>
-    <p><a href="games.html" style="color: blue;">Перейти до каталогу ігр</a></p>
-    <p><a href="https://ggsel.net/" style="color: blue;">Відвідати сайт наших партнерів</a></p>
-    <p>Ознайомтеся з угодою користувача, <a href="terms_of_use.html#rights">клікнувши сюди</a>.</p>
-    <p> <h2>Найпопулярніші товари цього тижня </h2></p></font>
-    <a href="photos/cs22.jpg" target="_blank">
-        <img src="photos/cs22.jpg" alt="cs2 logo"  height="400" border="0" width="400">
-    </a>
-    <a href="photos/dota2.jpg" target="_blank">
-        <img src="photos/dota2.jpg" alt="cs2 logo" align="right" height="400" border="0" width="400">
-    </a>
+    <p><a href="about_us.html">Дізнатися більше про нас</a></p>
+    <p><a href="games.html" >Перейти до каталогу ігр</a></p>
+    <p><a href="https://ggsel.net/" >Відвідати сайт наших партнерів</a></p>
+    <p style=  "font-weight: bold;padding: 10px;">Ознайомтеся з угодою користувача, <a href="terms_of_use.html#rights">клікнувши сюди</a>.</p>
+    <div id="shopweek"><p> <h2>Найпопулярніші товари цього тижня </h2></p></div>
+    
+        <img src="photos/cs22.jpg" alt="cs2 logo" class="mainimg"  >
+        <img src="photos/dota2.jpg" alt="cs2 logo" class="mainimg" >
+    
      <!-- Нумерований список -->
     <h2>Найпопулярніші комп'ютерні ігри</h2>
-    <ol type="1">
+   
+     <ol type="1">
         <li>Witcher 3: Дика Помста</li>
         <li>Grand Theft Auto V</li>
         <li>Minecraft</li>
