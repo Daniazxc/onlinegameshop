@@ -7,42 +7,50 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>Головна</title>
     <style>
-        a{
-            color:brown;
-            text-decoration:none
-        }
-        a:hover {
-            color:coral;
-        }
+        
     </style>
 </head>
 <body >
-     <div id="shopname"><h1>Інтернет магазин "AwesomeDeal"</h1></div>
- <p>Ласкаво просимо до нашого інтернет-магазину комп'ютерних ігор!</p>
-    <p>У нас ви знайдете найкращі ігри для PC, Xbox, PlayStation та інших платформ.</p>
+    <div id="shopname">
+        <h1>Інтернет магазин "AwesomeDeal"</h1>
+    </div>
+    <div id="uppertext">
+    <p>Ласкаво просимо до нашого інтернет-магазину комп'ютерних ігор!</p>
+    <p>У нас ви знайдете найкращі ігри для <span id="spanpc"> PC</span>,<span id="spanxbox"> Xbox</span>,<span id="spanps"> PlayStation</span> та інших платформ.</p>
     <p>Завідуйте до нас щодня для оновлених пропозицій та акцій!</p>
     <p><a href="about_us.html">Дізнатися більше про нас</a></p>
     <p><a href="games.html" >Перейти до каталогу ігр</a></p>
     <p><a href="https://ggsel.net/" >Відвідати сайт наших партнерів</a></p>
-    <p style="padding: 15px;"><b>Рекомендуємо</b> ознайомитись з <i>угодою користувача</i>, <a href="terms_of_use.html#rights">клікнувши сюди</a>.</p>
-    <div id="shopweek"><p> <h2>Найпопулярніші товари цього тижня </h2></p></div>
+    <p style="padding: 15px;"> <b>Рекомендуємо</b> ознайомитись з <i>угодою користувача</i>, <a href="terms_of_use.html#rights">клікнувши сюди</a>.</p>
+    </div>
+    <div class="animephoto">
+    <img src="photos/girl.jpg" >
+    </div>
+    <div class="animephotoreverse">
+        <img src="photos/reversegirl.jpg" >
+        </div>
+    <div id="shopweek">
+        <p> <h2>Найпопулярніші товари цього тижня </h2></p>
+    </div>
     
         <img src="photos/cs22.jpg" alt="cs2 logo" class="mainimg"  >
         <img src="photos/dota2.jpg" alt="cs2 logo" class="mainimg" >
     
      <!-- Нумерований список -->
-     <div id="table1">
+    
+     <div class="table1">
     <h2>Найпопулярніші комп'ютерні ігри</h2>  
      <ol type="1">
         <li>Witcher 3: Дика Помста</li>
         <li>Grand Theft Auto V</li>
         <li>Minecraft</li>
     </ol>
-</div>
+     </div>
 
     <!-- Маркований список -->
-    <h2>Найбільш очікувані ігри 2024 року</h2>
-    <div class="table2">
+    
+    <div class="table1">
+        <h2>Найбільш очікувані ігри 2024 року</h2>
     <ul type="circle">
         <li>Elden Ring</li>
         <li>Starfield</li>
@@ -51,8 +59,9 @@
 </div>
     <!-- Визначення списку -->
 
-    <h2>Кращі MMO ігри</h2>
-    <div class="table1">
+   
+    <div class="table1" >
+        <h2>Кращі MMO ігри</h2>
     <dl>
         <dt>World of Warcraft</dt>
         <dd>Найпопулярніша MMORPG у світі.</dd>
@@ -61,6 +70,27 @@
         <dt>Guild Wars 2</dt>
         <dd>Гра з нелінійним сюжетом та великими PvP битвами.</dd>
     </dl>
+</div>
+<div id="order-form" class="form-container">
+    <h2>Форма замовлення</h2>
+    <form action="thanks.html" method="post">
+
+        <label for="name">Кількість товару:</label>
+        <input type="text" id="name" name="name"><br>
+        
+        <label for="text">Ваша почта, на яку ми надішлемо ваше замовлення:</label>
+        <input type="phone" id="phone" name="phone"><br>
+
+        <label for="text">Код товару:</label>
+        <input type="text" id="item" name="item"><br>
+
+        <input type="submit" value="Відправити">
+    </form>
+</div>
+<div id="footer">
+    <footer>
+        <p>&copy; 2024 Інтернет магазин "AwesomeDeal" (з приводу всіх питань - вкладка "Дізнатися більше про нас")</p>
+    </footer>
 </div>
    
 
