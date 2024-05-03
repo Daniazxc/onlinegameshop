@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Holovach Dania">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="script.js" ></script>
     <title>Головна</title>
     <style>
         
@@ -13,8 +14,11 @@
 <body >
     <div id="shopname">
         <h1>Інтернет магазин "AwesomeDeal"</h1>
+        
     </div>
     <div id="uppertext">
+        <p><button onclick="replaceShopName()">Змінити назву </button></p>
+        <p><button onclick="changeTextContent()">Змінити перший рядок </button></p>
     <p>Ласкаво просимо до нашого інтернет-магазину комп'ютерних ігор!</p>
     <p>У нас ви знайдете найкращі ігри для <span id="spanpc"> PC</span>,<span id="spanxbox"> Xbox</span>,<span id="spanps"> PlayStation</span> та інших платформ.</p>
     <p>Завідуйте до нас щодня для оновлених пропозицій та акцій!</p>
@@ -22,6 +26,7 @@
     <p><a href="games.html" >Перейти до каталогу ігр</a></p>
     <p><a href="https://ggsel.net/" >Відвідати сайт наших партнерів</a></p>
     <p style="padding: 15px;"> <b>Рекомендуємо</b> ознайомитись з <i>угодою користувача</i>, <a href="terms_of_use.html#rights">клікнувши сюди</a>.</p>
+    <button onclick="colorChange()">Змінити фон на 30 секунд </button>
     </div>
     <div class="animephoto">
     <img src="photos/girl.jpg" >
@@ -40,23 +45,27 @@
     
      <div class="table1">
     <h2>Найпопулярніші комп'ютерні ігри</h2>  
-     <ol type="1">
+     <ul type="1">
         <li>Witcher 3: Дика Помста</li>
         <li>Grand Theft Auto V</li>
         <li>Minecraft</li>
-    </ol>
+    </ul>
      </div>
 
     <!-- Маркований список -->
     
     <div class="table1">
         <h2>Найбільш очікувані ігри 2024 року</h2>
-    <ul type="circle">
+    <ul id="gameList" type="circle">
         <li>Elden Ring</li>
         <li>Starfield</li>
         <li>Hogwarts Legacy</li>
     </ul>
 </div>
+<button onclick="addGame()">Додати гру</button>
+    <button onclick="replaceGame()">Замінити гру</button>
+    <button onclick="removeGame()">Видалити гру</button>
+
     <!-- Визначення списку -->
 
    
@@ -71,6 +80,7 @@
         <dd>Гра з нелінійним сюжетом та великими PvP битвами.</dd>
     </dl>
 </div>
+<button onclick="querysel()"> Які ігри найпопулярніші серед наших користувачів? </button>
 <div id="order-form" class="form-container">
     <h2>Форма замовлення</h2>
     <form action="thanks.html" method="post">
@@ -87,9 +97,14 @@
         <input type="submit" value="Відправити">
     </form>
 </div>
+<button onclick="userDialog()">Оцініть наш магазин</button>
+
+
 <div id="footer">
     <footer>
         <p>&copy; 2024 Інтернет магазин "AwesomeDeal" (з приводу всіх питань - вкладка "Дізнатися більше про нас")</p>
+        <button id="sponsor" onclick="gotosite()">Наші спонсори</button>
+        
     </footer>
 </div>
    

@@ -30,10 +30,21 @@ a:active {
     
 
 }
-#shopname h1, #shopweek h2, .nameofpage {
+#newshopname {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;   
+    background-color:rgb(90, 96, 172);
+    top:0;   
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+#shopname h1, #shopweek h2, .nameofpage, #newshopname h1 {
     color: rgb(247, 242, 247);
     text-shadow: 2px 2px 4px rgb(144, 14, 184);
 }
+
 #shopweek {
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
@@ -54,7 +65,7 @@ body {
     padding: 0; 
     font-size: 22px;
     
-    background-image: url(https://static.vecteezy.com/system/resources/previews/026/481/726/large_2x/a-spectacular-gaming-adventure-with-this-stunning-4k-wallpaper-free-photo.jpg);
+    background-image: url(https://static.vecteezy.com/system/resources/previews/026/481/726/large_2x/a-spectacular-gaming-adventure-with-this-stunning-4k-wallpaper-free-photo.jpg );
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -359,3 +370,77 @@ p#datatermsofuse:before {
     left: 200px;
     
 }
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #184d86; /* колір фону */
+    color: #fff; /* колір тексту */
+}
+
+button:hover {
+    background-color: #551d75; 
+}
+#gamestable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#gamestable th,
+#gamestable td {
+    padding: 10px;
+    border: 1px solid #1b1a1a;
+    text-align: center;
+}
+
+#gamestable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#gamestable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#gamestable tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+#gamestable img {
+    display: block;
+    margin: 0 auto;
+}
+#sponsor {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a3805; /* колір фону */
+    color: #fff; /* колір тексту */
+}
+#sponsor:hover {
+    background-color: #7f54c5; 
+}
+#bodygames {
+    background-image: url(https://wallpapercrafter.com/desktop/148720-anime-manga-anime-girls-fan-art-illustration-boobs-uniform-Nakano-Nino-minimalism-monochrome-dark-background-selective-coloring-5-toubun-no-Hanayome.png);
+    
+    size: 100%;
+   
+    background-image: url(https://static.vecteezy.com/system/resources/previews/026/481/726/large_2x/a-spectacular-gaming-adventure-with-this-stunning-4k-wallpaper-free-photo.jpg );
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+    

@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Holovach Dania">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="script.js" ></script>
     <title>Каталог</title>
+   
+
 </head>
-<body>
+<body id="bodygames">
       <h1 class="nameofpage">Каталог онлайн ігор</h1> 
-    <div>
+      <input type="text" id="gameSearchInput" onkeyup="searchGame()" placeholder="Пошук за назвою гри...">
+    <div id="gamestable">
     <table >
         <thead>
             <tr >
@@ -20,6 +24,7 @@
             </tr>
         </thead>
         <tbody>
+        
             <tr>
                 <td><img src="photos/cs22.jpg" alt="logo cs2" width="100" height="100"></td>
                 <td><a href="https://www.counter-strike.net/cs2?l=russian">counter-strike 2</a></td>
@@ -38,6 +43,19 @@
                 <td>2200 uah / 59 usd</td>
                 <td>304070</td>
             </tr>
+            <tr>
+                <td><img src="photos/baldur.jpeg" alt="baldur gate 3" width="100" height="100"></td>
+                <td><a href="https://www.playstation.com/uk-ua/games/baldurs-gate-3/">baldur gate 3</a></td>
+                <td>2200 uah / 59 usd</td>
+                <td>304070</td>
+            </tr>
+            <tr>
+                <td><img src="photos/baldur.jpeg" alt="baldur gate 3" width="100" height="100"></td>
+                <td><a href="https://www.playstation.com/uk-ua/games/baldurs-gate-3/">baldur gate 3</a></td>
+                <td>2200 uah / 59 usd</td>
+                <td>304070</td>
+            </tr>
+            
             
 
             
