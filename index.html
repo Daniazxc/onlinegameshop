@@ -45,13 +45,24 @@
     
      <div class="table1">
     <h2>Найпопулярніші комп'ютерні ігри</h2>  
-     <ul type="1">
+     <ul id="gama" type="1">
         <li>Witcher 3: Дика Помста</li>
         <li>Grand Theft Auto V</li>
         <li>Minecraft</li>
     </ul>
      </div>
-
+     <script>
+     document.getElementById("gama").addEventListener("click", function(event) {
+        let target = event.target;
+        if (target.tagName === 'LI') {
+            let listItems = document.querySelectorAll("#gama li");
+            listItems.forEach(function(item) {
+                item.classList.remove('highlight');
+            });
+            target.classList.add('highlight');
+        }
+     });
+     </script>
     <!-- Маркований список -->
     
     <div class="table1">
@@ -62,9 +73,11 @@
         <li>Hogwarts Legacy</li>
     </ul>
 </div>
-<button onclick="addGame()">Додати гру</button>
-    <button onclick="replaceGame()">Замінити гру</button>
-    <button onclick="removeGame()">Видалити гру</button>
+<div id="menu">
+    <button data-action="add"  onclick="handleMenuClick(event)">Додати гру</button>
+    <button data-action="replace"  onclick="handleMenuClick(event)">Замінити гру</button>
+    <button data-action="remove"   onclick="handleMenuClick(event)">Видалити гру</button>
+</div>
 
     <!-- Визначення списку -->
 

@@ -160,6 +160,9 @@ p>a {
     border-radius: 20px; 
    
 }
+.highlight {
+    background: linear-gradient(to right, #ff6666, #ffccff) !important;
+}
 .table1 h2 {
     display: flex;
     justify-content: center;

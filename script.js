@@ -25,7 +25,7 @@ function userDialog() {
     }
 }
 
-function showDEV(lastName, firstName, position = " Головний Розробник Проєкту") {
+function showDEV(lastName, firstName, position) {
     let message = "Прізвище: " + lastName + "\n" +
                   "Ім'я: " + firstName + "\n" +
                   "Посада: " + position;
@@ -76,15 +76,14 @@ function addGame() {
     let newGame = document.createElement("li");
     let textNode = document.createTextNode(gameName);
     newGame.append(textNode);
-    gameList.append(newGame);
-    
+    gameList.append(newGame);  
 }
 function removeGame() {
     let selectedGame = prompt("Введіть порядковий номер гри, яку ви хочете видалити (починаючи з 1):");
     let gameList = document.getElementById("gameList");
     let index = parseInt(selectedGame) - 1;
     if (index >= 0 && index < gameList.children.length) {
-        gameList.children[index].remove();aaaaawsqqqqqqqqqqqq
+        gameList.children[index].remove();
     } else {
         alert("Помилка: Ви ввели неправильний номер гри.");
     }
@@ -101,5 +100,47 @@ function replaceGame() {
         gameList.children[index].replaceWith(newGame);
     } else {
         alert("Помилка: Ви ввели неправильний номер гри.");
+    }
+}
+function promo() {
+
+let promoCodeDisplayed = false;
+function changeColor() {
+    let button = document.getElementById('myButton');
+    let Color = 'green' ;
+    button.style.backgroundColor = Color;
+}
+function sayHello() {
+    alert('Привіт! Тримай промокод на 15% знижки:');
+}
+function sayGoodbye() {
+    if (!promoCodeDisplayed) {
+        alert('D22D-2QWQ');
+        promoCodeDisplayed = true;
+    } else {     
+        document.getElementById('myButton').removeEventListener('click', sayGoodbye);
+    }
+}
+document.getElementById('myButton').onclick = changeColor;
+document.getElementById('myButton').addEventListener('click', sayHello);
+document.getElementById('myButton').addEventListener('click', sayGoodbye);
+let eventHandler = {handleEvent: function(event) {alert("Подія спрацювала на елементі: " + event.currentTarget.innerHTML);}};
+document.getElementById('myButton').addEventListener('click', eventHandler);
+}
+
+
+function handleMenuClick(event) {
+    let action = event.target.dataset.action;
+    switch (action) {
+        case "add":
+            addGame();
+            break;
+        case "replace":
+            replaceGame();
+            break;
+        case "remove":
+            removeGame();
+            break;
+        
     }
 }
